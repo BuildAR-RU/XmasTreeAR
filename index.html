@@ -8,153 +8,81 @@
       nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
     ></script>
-<<<<<<< Updated upstream
-  </head>
-  <body>
-    <script>
-	  function isFacebookApp() {
-    var ua = navigator.userAgent || navigator.vendor || window.opera;
-    return (ua.indexOf('Instagram') > -1);
+	<<<<<<< Updated upstream
+</head>
+<body>
+  <script>
+	function isFacebookApp() {
+  var ua = navigator.userAgent || navigator.vendor || window.opera;
+  return (ua.indexOf('Instagram') > -1);
 }
-		  if(isFacebookApp()) {
-			  alert("Для просмотра AR откройте страницу в Safari")
-		  }
-		     
+		if(isFacebookApp()) {
+			alert("Для просмотра AR откройте страницу в Safari")
+		}
+		   
 </script>
-    <div>
-      <style>
-        model-viewer {
-          width: 100%;
-          height: 92%;
+  <div>
+	<style>
+	  model-viewer {
+		width: 100%;
+		height: 92%;
 
-        }
-        
-        .pos {
-          display: flex;
-            justify-content: center;
-
-            font-weight: 600;
-            font-size: 24;
-            color: #A00A0A;
-            top: 10%;
-          
-        }
-        
-        .lol {
-           display: flex;
-          margin: 1em;
-           justify-content: center;
-          
-        }
-        
-        img {
-          width: 24%;
-          top: 1%;
-          height: 6%;
-        }
-	      #ar-button {
-    background-image: url(Models/icon.png);
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: 12px 50%;
-    background-color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    bottom: 32px;
-    padding: 0px 16px 0px 40px;
-    font-family: Roboto Regular, Helvetica Neue, sans-serif;
-    font-size: 14px;
-    color:#EA5A04;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 18px;
-    border: 1px solid #EA5A04;
-  }
-      </style>
-      <div class="lol">
-        <img src="Models/it-park-logo.svg">
-      </div>
-      
-      <model-viewer position="0 0 0" autoplay src="Models/xmas2.glb" ar ar-modes="webxr scene-viewer quick-look fallback"
-      ar-scale="auto" auto-rotate camera-controls alt="model" ios-src="Models/xmas2.usdz">
-        <button slot="ar-button" id="ar-button">
-    View in your space
-  </button>
-        </model-viewer>
-    </div>
-  </body>
-=======
-	</head>
-	<body>
-		<script>
-			function isFacebookApp() {
-		  var ua = navigator.userAgent || navigator.vendor || window.opera;
-		  return (ua.indexOf('Instagram') > -1);
 	  }
-				if(isFacebookApp()) {
-					alert("Для просмотра AR откройте страницу в Safari")
-				}
-				   
-	  </script>
-		  <div>
-			<style>
-			  model-viewer {
-				width: 100%;
-				height: 90%;
 	  
-			  }
-			  
-			  .pos {
-				display: flex;
-				  justify-content: center;
+	  .pos {
+		display: flex;
+		  justify-content: center;
+
+		  font-weight: 600;
+		  font-size: 24;
+		  color: #A00A0A;
+		  top: 10%;
+		
+	  }
 	  
-				  font-weight: 600;
-				  font-size: 24;
-				  color: #A00A0A;
-				  top: 10%;
-				
-			  }
-			  
-			  .lol {
-				 display: flex;
-				margin: 1em;
-				 justify-content: center;
-				
-			  }
-			  
-			  img {
-				width: 24%;
-				top: 1%;
-				height: 6%;
-			  }
-			  button {
-				position: absolute;
-				background-color: #EA5A04;
-				border-radius: 12px;
-				font-size: 18;
-				border: none;
-				bottom: 5%;
-				left:15%;
-				align-items: center;
-				font-weight: 800;
-				color: white;
-				padding: 1em;
-				justify-content: center;
-			  }
-			</style>
-			<div class="lol">
-			  <img src="Models/it-park-logo.svg">
-			</div>
-			
-			<model-viewer camera-controls autoplay ar shadow-intensity="1" src="Models/xmasAnim5.glb" ios-src="Models/AnimTree.usdz" alt="An animated 3D model of a Xmas tree">
-			  <button
-				slot="ar-button" id="ar-button">
-				ОТКРЫТЬ ПРОСМОТР AR
-			</button>
-			  </model-viewer>
-		  </div>
-	</body>
->>>>>>> Stashed changes
+	  .lol {
+		 display: flex;
+		margin: 1em;
+		 justify-content: center;
+		
+	  }
+	  
+	  img {
+		width: 24%;
+		top: 1%;
+		height: 6%;
+	  }
+		#ar-button {
+  background-image: url(Models/icon.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 12px 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 32px;
+  padding: 0px 16px 0px 40px;
+  font-family: Roboto Regular, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  color:#EA5A04;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  border: 1px solid #EA5A04;
+}
+	</style>
+	<div class="lol">
+	  <img src="Models/it-park-logo.svg">
+	</div>
+	
+	<model-viewer position="0 0 0" autoplay src="Models/xmas2.glb" ar ar-modes="webxr scene-viewer quick-look fallback"
+	ar-scale="auto" auto-rotate camera-controls alt="model" ios-src="Models/xmas2.usdz">
+	  <button slot="ar-button" id="ar-button">
+  View in your space
+</button>
+	  </model-viewer>
+  </div>
+</body>
 </html>
